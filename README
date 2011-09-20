@@ -1,4 +1,4 @@
-Google Appengine Path Settings
+Google App Engine Path Settings
 
 * in linux..
 sudo mklink -s GAE_SDK_PATH /usr/local/google_appengine 
@@ -13,3 +13,7 @@ mkdir c:\usr\local
 cd c:\usr/local
 mklink /D google_appengine "C:/Program Files/Google/google_appengine"
 
+
+Pydev Python Interpreter Settings
+
+* Add Python25 to new Interpreter as 'python2.5'
