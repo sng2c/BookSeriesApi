@@ -26,9 +26,9 @@ class Yes24Series:
         f.close()
         m = re.search('<a href="(/24/goods/.+?)\\?scode=',html)
         if m != None :
-            return ["http://www.yes24.com"+m.group(1)]
+            return "http://www.yes24.com"+m.group(1)
         else:
-            return []
+            return ''
 
     def parse(self,dataurl):
         ret = []
@@ -55,7 +55,7 @@ class AladinSeries:
         
     def url(self,isbn):
         srchurl = "http://www.aladin.co.kr/shop/wproduct.aspx?ISBN=%s" % isbn
-        return [srchurl]
+        return srchurl
 
     def parse(self,dataurl):
         ret = []
