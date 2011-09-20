@@ -1,0 +1,15 @@
+Google Appengine Path Settings
+
+* in linux..
+sudo mklink -s GAE_SDK_PATH /usr/local/google_appengine 
+
+
+* in OSX
+sudo mklink -s /Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine /usr/local/google_appengine 
+
+* in windows
+mkdir c:\usr
+mkdir c:\usr\local
+cd c:\usr/local
+mklink /D google_appengine "C:/Program Files/Google/google_appengine"
+
